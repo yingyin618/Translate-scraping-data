@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translate</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static '/assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/assets/css/fontawesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/assets/css/all.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/assets/css/style.css' %}">
+    <script src = "{% static 'assets/js/jquery-3.4.1.min.js' %}"></script>
+    <script src = "{% static 'assets/js/script.js' %}"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="alert alert-warning mt-5">
+			<h4 class="alert-heading"><i class="fas fa-warning"></i> Warning!</h4>
+			{{ results | safe }}
+		</div>
+	</div>
+</body>
+</html>
